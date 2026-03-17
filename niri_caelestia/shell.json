@@ -81,7 +81,7 @@
       "enabled": true,
       "scale": 1,
       "position": "bottom-right",
-      "invertColors": false,
+      "invertColors": true,
       "background": {
         "enabled": false,
         "opacity": 0.7,
@@ -114,7 +114,7 @@
       "shown": 4,
       "activeIndicator": true,
       "occupiedBg": true,
-      "showWindows": false,
+      "showWindows": true,
       "perMonitorWorkspaces": true,
       "windowIconImage": false,
       "windowIconGap": 5,
