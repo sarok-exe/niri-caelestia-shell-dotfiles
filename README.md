@@ -19,7 +19,7 @@
 
 ### 🎥 Video Demo
 <div align="center">
-  <video src="assets/videos/Video_2026-03-17_06-13-46.mp4" width="800" controls>
+  <video src="assets/videos/demo.mp4" width="800" controls>
     Your browser does not support the video tag.
   </video>
   <p><em>Quick tour of my Niri + Caelestia setup</em></p>
