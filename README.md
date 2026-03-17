@@ -52,12 +52,11 @@ sudo cmake --install build
 | 🪟 **Window Manager** | Niri with Caelestia shell |
 | 🖥️ **Terminal** | Kitty + Fish + Starship |
 | 📁 **File Manager** | Yazi |
-| 🎵 **Music** | MPD + RMPC |
+| 🎵 **Music** | MPD |
 | 🎬 **Media** | MPV |
 | 📊 **System Monitor** | Btop + Fastfetch |
 | 📝 **Notes** | Obsidian |
 | 🎛️ **Visualizer** | Cava |
-| 🔍 **Launcher** | Fuzzel |
 | 🖱️ **Cursor** | Bibata Modern Ice |
 
 
