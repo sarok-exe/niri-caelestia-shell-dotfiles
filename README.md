@@ -233,12 +233,12 @@ If you prefer to install manually:
 
 ```bash
 # Install packages
-sudo pacman -S fish starship kitty mpd mpv btop fastfetch cava fuzzel flameshot fcitx5
+sudo pacman -S fish starship kitty mpd mpv btop fastfetch cava flameshot fcitx5
 yay -S yazi niri obsidian rmpc blanket keypunch niri-caelestia-shell-git bibata-modern-ice-cursor-theme
 flatpak install flathub io.github.alainm23.planify com.github.PintaProject.Pinta com.brave.Browser org.telegram.desktop
 
 # Copy configs
-cp -r kitty niri fish starship.toml yazi mpd mpv btop fastfetch obsidian cava fuzzel niri_caelestia ~/.config/
+cp -r kitty niri fish starship.toml yazi mpd mpv btop fastfetch obsidian cava niri_caelestia ~/.config/
 
 # Change shell
 chsh -s $(which fish)
