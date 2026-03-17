@@ -25,7 +25,7 @@
   <p><em>Quick tour of Niri + Caelestia shell</em></p>
 </div>
 
-[⬇️ Download video](assets/videos/Video_2026-03-17_06-13-46.mp4)
+[⬇️ Download video](assets/videos/demo.mp4)
 
 <div align="center">
   <img src="profile.jpeg" width="150" alt="i hate my life">
