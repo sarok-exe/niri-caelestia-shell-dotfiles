@@ -1,6 +1,31 @@
 # 🌌 Niri Caelestia Dotfiles
 
-## 📸 Screenshots
+## 📸 Screenshots & Demo
+
+### 🖼️ Gallery
+<div align="center">
+
+| Desktop | Terminal | Dashboard |
+|---------|----------|-----------|
+| <img src="assets/screenshots/2026-03-17_06-16.png" width="300"> | <img src="assets/screenshots/2026-03-17_06-18.png" width="300"> | <img src="assets/screenshots/2026-03-17_06-18_1.png" width="300"> |
+| **Niri + Caelestia** | **Kitty + Fish** | **Dashboard** |
+
+| Launcher | System Info |
+|----------|-------------|
+| <img src="assets/screenshots/2026-03-17_06-19.png" width="300"> | <img src="assets/screenshots/2026-03-17_06-16.png" width="300"> |
+| **App Launcher** | **Fastfetch + Btop** |
+
+</div>
+
+### 🎥 Video Demo
+<div align="center">
+  <video src="assets/videos/Video_2026-03-17_06-13-46.mp4" width="800" controls>
+    Your browser does not support the video tag.
+  </video>
+  <p><em>Quick tour of my Niri + Caelestia setup</em></p>
+</div>
+
+[⬇️ Download video](assets/videos/Video_2026-03-17_06-13-46.mp4)
 
 <div align="center">
   <img src="profile.jpeg" width="150" alt="i hate my life">
