@@ -70,8 +70,8 @@ sudo cmake --install build
 ### One-liner Installation
 
 ```bash
-git clone https://github.com/sarok-exe/dotfiles-with-niri-caelestia-shell
-cd dotfiles-with-niri-caelestia-shell
+git clone https://github.com/sarok-exe/niri-caelestia-shell-dotfiles
+cd niri-caelestia-shell-dotfiles
 chmod +x install.sh
 ./install.sh
 ```
