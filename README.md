@@ -4,7 +4,10 @@
   <h3>My personal Niri window manager configuration</h3>
   <p>Beautiful, functional, and fully customized with Caelestia shell</p>
 </div>
+
 # 🌌 Niri Caelestia Dotfiles
+
+
 ## 📸 Screenshots
 
 <div align="center">
