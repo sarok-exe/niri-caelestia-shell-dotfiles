@@ -1,5 +1,9 @@
 # 🌌 Niri Caelestia Dotfiles
-
+<div align="center">
+  <img src="profile.jpeg" width="150" alt="i hate my life">
+  <h3>My personal Niri window manager configuration</h3>
+  <p>Beautiful, functional, and fully customized with Caelestia shell</p>
+</div>
 
 ## 📸 Screenshots
 
@@ -27,11 +31,7 @@
 
 [⬇️ Download video](assets/videos/demo.mp4)
 
-<div align="center">
-  <img src="profile.jpeg" width="150" alt="i hate my life">
-  <h3>My personal Niri window manager configuration</h3>
-  <p>Beautiful, functional, and fully customized with Caelestia shell</p>
-</div>
+
 ## ⚠️ Important Requirements
 
 ### 1. **You must have Niri window manager installed**
