@@ -1,19 +1,19 @@
 # 🌌 Niri Caelestia Dotfiles
 
-## 📸 Screenshots & Demo
 
-### 🖼️ Gallery
+## 📸 Screenshots
+
 <div align="center">
 
-| Desktop | Terminal | Dashboard |
-|---------|----------|-----------|
-| <img src="assets/screenshots/2026-03-17_06-16.png" width="300"> | <img src="assets/screenshots/2026-03-17_06-18.png" width="300"> | <img src="assets/screenshots/2026-03-17_06-18_1.png" width="300"> |
-| **Niri + Caelestia** | **Kitty + Fish** | **Dashboard** |
+### 🖥️ Desktop & Interface
+| Desktop | Dashboard | Launcher |
+|---------|-----------|----------|
+| <img src="assets/screenshots/desktop.png" width="300"> | <img src="assets/screenshots/dashboard.png" width="300"> | <img src="assets/screenshots/launcher.png" width="300"> |
 
-| Launcher | System Info |
-|----------|-------------|
-| <img src="assets/screenshots/2026-03-17_06-19.png" width="300"> | <img src="assets/screenshots/2026-03-17_06-16.png" width="300"> |
-| **App Launcher** | **Fastfetch + Btop** |
+### 🛠️ Applications
+| Terminal | System Monitor |
+|----------|----------------|
+| <img src="assets/screenshots/terminal.png" width="300"> | <img src="assets/screenshots/fast_btop.png" width="300"> |
 
 </div>
 
@@ -22,7 +22,7 @@
   <video src="assets/videos/demo.mp4" width="800" controls>
     Your browser does not support the video tag.
   </video>
-  <p><em>Quick tour of my Niri + Caelestia setup</em></p>
+  <p><em>Quick tour of Niri + Caelestia shell</em></p>
 </div>
 
 [⬇️ Download video](assets/videos/Video_2026-03-17_06-13-46.mp4)
@@ -233,12 +233,20 @@ If you prefer to install manually:
 
 ```bash
 # Install packages
+<<<<<<< HEAD
 sudo pacman -S fish starship kitty mpd mpv btop fastfetch cava flameshot fcitx5
+=======
+sudo pacman -S fish starship kitty  mpv btop fastfetch cava  flameshot fcitx5
+>>>>>>> e641b0d (Add clean screenshots and update gallery)
 yay -S yazi niri obsidian rmpc blanket keypunch niri-caelestia-shell-git bibata-modern-ice-cursor-theme
 flatpak install flathub io.github.alainm23.planify com.github.PintaProject.Pinta com.brave.Browser org.telegram.desktop
 
 # Copy configs
+<<<<<<< HEAD
 cp -r kitty niri fish starship.toml yazi mpd mpv btop fastfetch obsidian cava niri_caelestia ~/.config/
+=======
+cp -r kitty niri fish starship.toml yazi  mpv btop fastfetch obsidian cava  niri_caelestia ~/.config/
+>>>>>>> e641b0d (Add clean screenshots and update gallery)
 
 # Change shell
 chsh -s $(which fish)
