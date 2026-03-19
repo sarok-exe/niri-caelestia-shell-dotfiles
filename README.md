@@ -73,22 +73,8 @@ sudo cmake --install build
 - The shell to be installed at: `~/.config/quickshell/niri-caelestia-shell/`
 - Niri config will automatically launch it with: `spawn-at-startup "qs" "-c" "niri-caelestia-shell"`
 - my keybindings are designed to work with this specific version
-## ✨ Features
 
-| Category | Tools |
-|----------|-------|
-| 🪟 **Window Manager** | Niri with Caelestia shell |
-| 🖥️ **Terminal** | Kitty + Fish + Starship |
-| 📁 **File Manager** | Yazi |
-| 🎵 **Music** | MPD |
-| 🎬 **Media** | MPV |
-| 📊 **System Monitor** | Btop + Fastfetch |
-| 📝 **Notes** | Obsidian |
-| 🎛️ **Visualizer** | Cava |
-| 🖱️ **Cursor** | Bibata Modern Ice |
-
-
-## 🚀 Quick Installation
+## Installation
 
 ### Prerequisites
 - **Arch Linux** 
@@ -190,50 +176,10 @@ chmod +x install.sh
 
 > **Note:** `Mod` key is the **Super/Windows** key
 
-## 🎨 Customization Highlights
-
-### Beautiful Animations
-
-```kdl
-animations {
-    workspace-switch {
-        spring damping-ratio=0.900 stiffness=800
-    }
-    window-open {
-        duration-ms 400
-        curve "ease-out-expo"
-    }
-}
-```
-
-### Rounded Corners
-
-```kdl
-window-rule {
-  geometry-corner-radius 20
-  clip-to-geometry true
-}
-```
-
-### Shadow Effects
-
-```kdl
-shadow {
-    softness 30
-    spread 5
-    offset x=0 y=5
-    color "#0007"
-}
-```
-
-## 🖱️ Mouse Cursor
-
+## Mouse Cursor
 The config uses **Bibata-Modern-Ice** cursor theme with size 30. This is installed automatically by the script.
 
-## 🔧 Manual Installation (if needed)
-
-If you prefer to install manually:
-
+## Manual Installation 
 ```bash
 # Install packages
 <<<<<<< HEAD
@@ -255,23 +201,6 @@ cp -r kitty niri fish starship.toml yazi  mpv btop fastfetch obsidian cava  niri
 chsh -s $(which fish)
 ```
 
-## 📁 Repository Structure
-
-```
-niri-dotfiles/
-├── install.sh          # Installation script
-├── README.md           # This file
-├── kitty/              # Kitty terminal config
-├── niri/               # Niri window manager config
-├── starship.toml       # Starship prompt config
-├── yazi/               # Yazi file manager config
-├── mpd/                # Music Player Daemon config
-├── mpv/                # MPV media player config
-├── btop/               # Btop system monitor config
-├── fastfetch/          # Fastfetch system info config
-├── cava/               # Cava audio visualizer config
-└── niri_caelestia/     # Caelestia shell config
-```
 ### Getting Help
 
 - [Niri GitHub](https://github.com/YaLTeR/niri)
@@ -279,26 +208,10 @@ niri-dotfiles/
 - [niri Caelestia GitHub](https://github.com/AyushKr2003/niri-caelestia-shell)
 - Open an issue in this repository
 
-## 📝 To-Do
-
-- [*] Add more keybindings
-- [ ] Add wallpapers
-- [ ] Create installation video
-
-## 🤝 Credits
+## Credits
 
 - [YaLTeR](https://github.com/YaLTeR) - Creator of Niri
 - [caelestia-dots](https://github.com/caelestia-dots) - Creator of Caelestia shell
 - [AyushKr2003](https://github.com/AyushKr2003) - Creator of niri Caelestia shell
 - All the open source projects that made this possible
 
-## 📜 License
-
-This dotfiles collection is open source and free to use. Feel free to modify and share!
-
----
-
-<div align="center">
-  <p>Made with ❤️ for the Niri community</p>
-  <p>⭐ Star this repo if you find it useful! ⭐</p>
-</div>
