@@ -1,0 +1,15 @@
+# Highlights at 50% opacity so text stays readable
+set highlight-color "rgba(255,255,0,0.5)"
+set highlight-active-color "rgba(0,191,255,0.5)"
+# Comfort
+set adjust-open "best-fit"
+set guioptions ""
+set statusbar-h-padding 8
+set statusbar-v-padding 8
+
+# Paper modes — Ctrl+R toggles recolor, Ctrl+G sepia paper, Ctrl+B black paper
+set recolor-darkcolor "#E8E6E3"
+set recolor-lightcolor "#141414"
+map <C-r> recolor
+map <C-g> feedkeys ":set recolor-lightcolor #E8DCC0<Return>"
+map <C-b> feedkeys ":set recolor-lightcolor #141414<Return>"

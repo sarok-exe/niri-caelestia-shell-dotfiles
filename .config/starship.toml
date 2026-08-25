@@ -1,0 +1,87 @@
+# Starship prompt for the gruvbox rice
+add_newline = false
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$jobs\
+$cmd_duration\
+$line_break\
+$character\
+"""
+
+[fill]
+symbol = ""
+
+[username]
+style_user = "bold #8ec07c"
+style_root = "bold #ea6962"
+format = "[$user]($style)"
+
+[hostname]
+style = "bold #e78a4e"
+format = "@[$hostname]($style) "
+
+[directory]
+style = "#83a598"
+read_only = " "
+truncation_length = 4
+truncate_to_repo = false
+home_symbol = ""
+
+[character]
+success_symbol = "[󰜴](bold #8ec07c)"
+error_symbol = "[󰜴](bold #ea6962)"
+vicmd_symbol = "[󰜴](bold #d3869b)"
+
+[cmd_duration]
+min_time = 2000
+style = "bold #d8a657"
+format = "took [$duration]($style) "
+
+[git_branch]
+symbol = "  "
+format = 'on [$symbol$branch(:$remote_branch)]($style) '
+ignore_branches = []
+style = "bold #d3869b"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "#8ec07c"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "#555555"
+
+[git_metrics]
+disabled = false
+
+[jobs]
+symbol = " "
+style = "bold #ea6962"
+number_threshold = 1
+format = "[$symbol]($style)"
+
+[python]
+symbol = " 󰌠"
+
+[c]
+symbol = " "
+
+[lua]
+symbol = " 󰢱"
+
+[rust]
+symbol = " "
+
+[custom.stunnel]
+when = "ps aux | grep stunnel | grep -v grep"
+command = "ps -o etime= -p $(ps aux | grep stunnel | grep -v grep | awk '{print $2}')"
+style = "red"
+format = "[TUNNEL OPEN for $output]($style)"

@@ -1,0 +1,9 @@
+# Ignore everything…
+/*
+
+# …except the public setup
+!.gitignore
+!README.md
+!LICENSE
+!install.sh
+!/.config/

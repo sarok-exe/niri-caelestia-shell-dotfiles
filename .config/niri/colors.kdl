@@ -1,0 +1,8 @@
+// Niri colors — Waybar Gruvbox theme (static)
+layout {
+    focus-ring {
+        width 2
+        active-color   "#83a598"
+        inactive-color "#484848"
+    }
+}

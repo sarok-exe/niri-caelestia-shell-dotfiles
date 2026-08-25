@@ -1,0 +1,319 @@
+/* ==============================================================================
+ * swaync — gruvbox theme
+ * Matches the waybar / rofi palette. Flat, sharp corners, dark blocks.
+ * Accent language: blue = neutral · green = success/on · red = critical/urgent
+ *                  orange = warning · gray = muted
+ * Font: Koft Arabic, with a Nerd Font fallback so the glyph labels in
+ *       the buttons-grid / menubar / volume / backlight widgets keep rendering.
+ * ============================================================================ */
+
+@define-color bg #222222;
+@define-color bg-alt #383838;
+@define-color border #484848;
+@define-color gray #555555;
+@define-color fg #ebdbb2;
+@define-color fg-soft #fff4d2;
+@define-color black #000000;
+@define-color blue #83a598;
+@define-color blue-dark #458588;
+@define-color pink #d3869b;
+@define-color green #8ec07c;
+@define-color red #ea6962;
+@define-color red-critical #cc241d;
+@define-color orange #e78a4e;
+
+* {
+    font-family: "Koft Arabic", "JetBrainsMono Nerd Font Mono";
+}
+
+/* =================================== POPUP ================================== */
+
+.notification-row {
+    outline: none;
+    margin-bottom: 4px;
+    transition: all 300ms ease;
+}
+
+.notification {
+    background: @bg-alt;
+    border: 1px solid @border;
+    border-left: 3px solid @border;
+    border-radius: 0;
+    padding: 10px 12px;
+    color: @fg;
+    font-size: 14px;
+    box-shadow: none;
+    transition: all 300ms ease;
+}
+
+.notification-row:hover .notification {
+    border-color: @blue;
+    border-left-color: @blue;
+}
+
+/* urgency accent bars */
+.notification.low {
+    border-left-color: @gray;
+}
+
+.notification.normal {
+    border-left-color: @blue;
+}
+
+.notification.critical {
+    border-left-color: @red-critical;
+    background: @bg-alt;
+}
+
+.notification-content {
+    margin-left: 10px;
+}
+
+.notification-content .summary {
+    color: @fg-soft;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.notification-content .body {
+    color: @fg;
+    font-size: 13px;
+}
+
+.notification-content .time {
+    color: @gray;
+    font-size: 12px;
+}
+
+/* action buttons (notification-inline-reply / actions) */
+.notification-default-action,
+.notification-action {
+    background: @bg-alt;
+    border: 1px solid @border;
+    border-radius: 0;
+    padding: 6px 10px;
+    color: @fg;
+    transition: all 300ms ease;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+    background: @blue;
+    border-color: @blue;
+    color: @black;
+}
+
+/* =============================== CONTROL CENTER ============================= */
+
+.control-center {
+    background: @bg;
+    border: 1px solid @border;
+    border-radius: 0;
+    padding: 8px;
+    color: @fg;
+    font-size: 14px;
+}
+
+.control-center-clear-all {
+    background: @bg-alt;
+    border: 1px solid @border;
+    border-radius: 0;
+    padding: 4px 12px;
+    color: @fg;
+    transition: all 300ms ease;
+}
+
+.control-center-clear-all:hover {
+    background: @blue;
+    border-color: @blue;
+    color: @black;
+}
+
+.control-center-dnd {
+    color: @fg;
+    padding: 4px;
+}
+
+.control-center-dnd label {
+    color: @fg;
+}
+
+.widget-title {
+    color: @fg-soft;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.widget-title > button {
+    color: @fg;
+    background: transparent;
+    border: none;
+}
+
+.widget-title > button:hover {
+    color: @blue;
+}
+
+.widget-label {
+    color: @fg;
+}
+
+/* ==================================== DND =================================== */
+
+.widget-dnd > switch {
+    background: @bg-alt;
+    border: 1px solid @border;
+    border-radius: 0;
+    transition: all 300ms ease;
+}
+
+.widget-dnd > switch:checked {
+    background: @green;
+    border-color: @green;
+}
+
+.widget-dnd > switch slider {
+    background: @fg;
+    border-radius: 0;
+    min-width: 22px;
+    min-height: 22px;
+}
+
+.widget-dnd > switch:checked slider {
+    background: @black;
+}
+
+.widget-dnd > switch:hover,
+.widget-dnd > switch:checked:hover {
+    background: @green;
+    border-color: @green;
+}
+
+/* ================================== SLIDERS ================================= */
+
+.widget-volume scale trough,
+.widget-backlight scale trough {
+    background: @bg-alt;
+    border: 1px solid @border;
+    min-height: 10px;
+    border-radius: 0;
+}
+
+.widget-volume scale highlight,
+.widget-backlight scale highlight,
+.widget-volume scale progress,
+.widget-backlight scale progress {
+    background: @blue;
+    border-radius: 0;
+}
+
+.widget-volume scale slider,
+.widget-backlight scale slider {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    min-height: 0;
+    min-width: 0;
+    border-radius: 0;
+}
+
+/* =============================== BUTTONS GRID =============================== */
+
+.widget-buttons-grid flowboxchild > button {
+    background: @bg-alt;
+    border: 1px solid @border;
+    border-radius: 0;
+    margin: 4px;
+    padding: 8px 14px;
+    color: @fg;
+    box-shadow: none;
+    transition: all 300ms ease;
+}
+
+.widget-buttons-grid flowboxchild > button:hover {
+    background: @blue;
+    border-color: @blue;
+    color: @black;
+}
+
+.widget-buttons-grid flowboxchild > button.toggle:checked {
+    background: @green;
+    border-color: @green;
+    color: @black;
+}
+
+/* glyph-only toggle buttons stay large, like the stock theme */
+.widget-buttons-grid flowboxchild > button label,
+.widget-buttons-grid flowboxchild > button * {
+    font-size: 18px;
+}
+
+/* ================================= MENUBAR ================================== */
+
+.widget-menubar {
+    background: @bg-alt;
+    border: 1px solid @border;
+    border-radius: 0;
+    padding: 6px;
+    margin: 8px 0;
+    color: @fg;
+    box-shadow: none;
+}
+
+.widget-menubar > box > .menu-button-bar > .widget-menubar-container > button,
+.widget-menubar > revealer button {
+    min-width: 90px;
+    background: @bg-alt;
+    border: 1px solid @border;
+    border-radius: 0;
+    padding: 6px 18px;
+    color: @fg;
+    transition: all 300ms ease;
+}
+
+.widget-menubar > box > .menu-button-bar > .widget-menubar-container > button:hover,
+.widget-menubar > revealer button:hover {
+    background: @blue;
+    border-color: @blue;
+    color: @black;
+}
+
+.widget-menubar > box > .menu-button-bar > .widget-menubar-container > button label,
+.widget-menubar > revealer button label {
+    color: @fg;
+}
+
+.widget-menubar > box > .menu-button-bar > .widget-menubar-container > button:hover label,
+.widget-menubar > revealer button:hover label {
+    color: @black;
+}
+
+/* =================================== MPRIS ================================== */
+
+.widget-mpris {
+    background: @bg-alt;
+    border: 1px solid @border;
+    border-radius: 0;
+    padding: 8px 12px;
+    color: @fg;
+}
+
+.widget-mpris-title {
+    color: @fg-soft;
+    font-weight: bold;
+}
+
+.widget-mpris-subtitle {
+    color: @gray;
+}
+
+/* ================================== MISC ==================================== */
+
+.widget-inhibitors,
+.widget-inhibitors * {
+    color: @fg;
+}
+
+.empty-placeholder {
+    color: @gray;
+}

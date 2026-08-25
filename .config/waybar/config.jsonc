@@ -1,0 +1,150 @@
+{
+  "layer": "top",
+  "margin-top": 5,
+  "margin-right": 5,
+  "margin-left": 5,
+  "spacing": 4,
+  "modules-left": [
+    "custom/rofi",
+    "niri/workspaces",
+    "niri/window",
+    "custom/timer"
+  ],
+  "modules-right": [
+    "network",
+    "disk",
+    "cpu",
+    "custom/cpu_temp",
+    "backlight",
+    "custom/memory",
+    "pulseaudio",
+    "battery",
+    "clock"
+  ],
+  "custom/rofi": {
+    "format": "",
+    "on-click": "rofi -show drun -disable-history -show-icons -theme-str 'window { width: 22% ; location: northwest; margin: 10px 0 0 10px; } listview { lines: 20; }'",
+    "on-click-right": "~/.config/custom_scripts/power.sh",
+    "escape": true,
+    "tooltip": false
+  },
+  "niri/workspaces": {
+    "disable-scroll": true,
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{index}"
+  },
+  "niri/window": {
+    "format": "{app_id}",
+    "separate-outputs": true,
+    "tooltip": false
+  },
+  "disk": {
+    "format": " {free}",
+    "interval": 20
+  },
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": false,
+    "interval": 60,
+    "on-click-right": "~/.config/custom_scripts/launch_tui.sh btop"
+  },
+  "custom/cpu_temp": {
+    "exec": "~/.config/waybar/scripts/waybarTemp.sh",
+    "return-type": "json",
+    "interval": 2,
+    "format": " {}",
+    "tooltip": false
+  },
+  "backlight": {
+    "format": " {percent}%",
+    "tooltip": false,
+    "on-click-right": "~/.config/custom_scripts/wlsunset.sh"
+  },
+  "custom/memory": {
+    "exec": "~/.config/waybar/scripts/memory_usage.sh",
+    "interval": 2,
+    "return-type": "json",
+    "format": " {}"
+  },
+  "pulseaudio": {
+    "scroll-step": 1,
+    "format": "{icon} {volume}%",
+    "format-muted": " {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-bluetooth-muted": " {volume}%",
+    "format-source": " {volume}%",
+    "format-icons": [
+      "",
+      ""
+    ],
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "~/.config/custom_scripts/launch_tui.sh wiremix",
+    "tooltip": false,
+    "max-volume": 130
+  },
+  "battery": {
+    "interval": 60,
+    "states": {
+      "good": 99,
+      "warning": 30,
+      "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-critical": "{icon} {capacity}%!!",
+    "format-warning": "{icon} {capacity}%",
+    "format-charging": "{icon} {capacity}%",
+    "format-plugged": "{icon} {capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-icons": {
+      "charging": "",
+      "plugged": "",
+      "default": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "tooltip": false
+  },
+  "network": {
+    "interval": 2,
+    "format": "{icon}  {bandwidthDownBits}  {bandwidthUpBits}",
+    "format-wifi": "{icon}  {bandwidthDownBits}  {bandwidthUpBits}",
+    "format-ethernet": "{icon}  {bandwidthDownBits}  {bandwidthUpBits}",
+    "format-disconnected": "{icon}",
+    "format-linked": "{icon}",
+    "format-icons": {
+      "wifi": [
+        "󰤟",
+        "󰤢",
+        "󰤥",
+        "󰤨"
+      ],
+      "ethernet": "",
+      "disconnected": "",
+      "linked": "",
+      "disabled": "",
+      "default": ""
+    },
+    "tooltip": false,
+    "states": {
+      "normal": 25
+    }
+  },
+  "custom/timer": {
+    "exec": "~/.config/waybar/scripts/timer.sh",
+    "return-type": "json",
+    "format": " {}",
+    "on-click": "~/.config/waybar/scripts/timer.sh toggle",
+    "on-click-right": "~/.config/waybar/scripts/timer.sh reset",
+    "tooltip": true
+  },
+  "clock": {
+    "format": " {:%a %d | %H:%M}",
+    "tooltip": false,
+    "interval": 1
+  }
+}

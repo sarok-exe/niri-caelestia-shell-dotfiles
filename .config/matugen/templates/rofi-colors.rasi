@@ -1,0 +1,18 @@
+/* Rofi - Theme (Matugen from wallpaper) */
+* {
+    background: #0f1511;
+    base: #0f1511;
+    text: #dfe4dd;
+    text-dim: #bfc8bb;
+    text-bright: #dfe4dd;
+    primary: #93d5ab;
+    accent: #b5ccba;
+    urgent: #ffb4ab;
+    warning: #b5ccba;
+    surface: #1b211d;
+    surface-hover: #2a332d;
+    border: #404942;
+    border-focus: #93d5ab;
+    separator: #404942;
+    transparent: transparent;
+}

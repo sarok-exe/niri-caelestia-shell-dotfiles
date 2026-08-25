@@ -1,0 +1,87 @@
+[flavor]
+name = "matugen"
+
+[fg]
+normal = "#e2e2e2"
+bold = "#ffb4a7"
+dim = "#c6c6c6"
+
+[bg]
+normal = "#131313"
+bold = "#1f1f1f"
+
+[border]
+normal = "#919191"
+active = "#ffb4a7"
+
+[selection]
+fg = "#5f150b"
+bg = "#ffb4a7"
+
+[scrollbar]
+fg = "#ffb4a7"
+bg = "#1f1f1f"
+
+[separator]
+fg = "#474747"
+
+[cursor]
+fg = "#5f150b"
+bg = "#ffb4a7"
+
+[link]
+fg = "#ffb4a7"
+hover = "{
+  "color": "#ffb4a7"
+}"
+
+[link_hint]
+fg = "#e7bdb5"
+
+[marker]
+fg = "#ddc48c"
+
+[flag]
+fg = "#ffb4ab"
+
+[info]
+fg = "#e2e2e2"
+bg = "#1f1f1f"
+
+[warning]
+fg = "#fae0a6"
+bg = "#564519"
+
+[error]
+fg = "#ffb4ab"
+bg = "#93000a"
+
+[spinner]
+fg = "#ffb4a7"
+
+[status]
+loading = "#ffb4a7"
+
+[title]
+fg = "#e2e2e2"
+bg = "#1f1f1f"
+
+[extra]
+prompt = "#ffb4a7"
+success = "#e7bdb5"
+warning = "#ddc48c"
+
+[input]
+fg = "#e2e2e2"
+bg = "#1f1f1f"
+
+[tab_num]
+fg = "#e2e2e2"
+bg = "#2a2a2a"
+
+[tab_active]
+fg = "#5f150b"
+bg = "#ffb4a7"
+
+[tab_sep]
+fg = "#919191"

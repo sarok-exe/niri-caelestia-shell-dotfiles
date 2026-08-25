@@ -1,0 +1,25 @@
+[config.wallpaper]
+set = false
+command = "true"
+
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty.conf.tmpl'
+output_path = '~/.cache/matugen/kitty/colors.conf'
+post_hook = 'pkill -USR1 -x kitty || true'
+
+[templates.fastfetch]
+input_path = '~/.config/matugen/templates/fastfetch.jsonc.tmpl'
+output_path = '~/.cache/matugen/fastfetch/config.jsonc'
+
+[templates.niri]
+input_path = '~/.config/matugen/templates/niri.conf.tmpl'
+output_path = '~/.cache/matugen/niri/border.conf'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/waybar-colors.css.tmpl'
+output_path = '~/.cache/matugen/waybar/colors.css'
+post_hook = 'pkill -USR2 -x waybar || true'
+
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi-grimm.rasi.tmpl'
+output_path = '~/.cache/matugen/rofi/grimm.rasi'
