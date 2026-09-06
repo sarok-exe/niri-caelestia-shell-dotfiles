@@ -1,0 +1,11 @@
+[volume]
+key_down = 1.2
+key_up = 1.5
+mouse = 1.5
+[profile]
+mouse_name = "mx-black"
+name = "holy-panda"
+[pitch]
+upper = 3
+lower = -3
+enabled = false

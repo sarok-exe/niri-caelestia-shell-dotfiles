@@ -4,6 +4,7 @@ spawn-at-startup "sh" "-c" "~/.config/scripts/wallpaper-rotate.sh"
 spawn-at-startup "sh" "-c" "~/.config/scripts/eye-care.sh"
 spawn-at-startup "sh" "-c" "wl-paste --watch cliphist store"
 spawn-at-startup "sh" "-c" "~/.config/scripts/battery-watchdog.sh"
+spawn-at-startup "sh" "-c" "~/.config/scripts/click-sound-daemon.py"
 config-notification {
     disable-failed
 }
@@ -243,6 +244,7 @@ binds {
     // Mod+Z removed: superproductivity not installed
     Mod+W { spawn "sh" "-c" "~/.config/scripts/toggle-waybar.sh"; }
     Mod+Shift+S { spawn "sh" "-c" "~/.config/scripts/toggle-click-sounds.sh"; }
+    Mod+Shift+A { spawn "sh" "-c" "~/.config/scripts/click-sounds cycle"; }
     Mod+Shift+W hotkey-overlay-title="Wallpaper picker" { spawn "sh" "-c" "~/.config/scripts/wallpaper_select.sh"; }
 
     Alt+Tab repeat=false { toggle-overview; }
